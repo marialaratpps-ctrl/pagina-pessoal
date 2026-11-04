@@ -1,1 +1,123 @@
 
+/* Estilo geral da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff5f5;
+    color: #493333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #a65d68;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+/* Títulos */
+h1 {
+    font-size: 32px;
+    color: white;
+}
+
+h2 {
+    font-size: 24px;
+    color: #a65d68;
+}
+
+/* Navegação */
+nav {
+    text-align: center;
+    padding: 15px;
+    background-color: #f2dada;
+}
+
+nav a {
+    color: #783f49;
+    text-decoration: none;
+    margin: 10px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #c06b7a;
+    text-decoration: underline;
+}
+
+/* Conteúdo */
+main {
+    width: 85%;
+    margin: 25px auto;
+}
+
+section {
+    background-color: white;
+    border: 1px solid #edcccc;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* Parágrafos e listas */
+p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+ul {
+    line-height: 1.8;
+}
+
+/* Classe para imagem */
+.foto {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border: 3px solid #a65d68;
+    border-radius: 50%;
+}
+
+/* Formulário */
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0 15px;
+    border: 1px solid #c99ba2;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+textarea {
+    height: 120px;
+}
+
+/* Botões */
+button, input[type="submit"], input[type="reset"] {
+    background-color: #a65d68;
+    color: white;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover, input[type="submit"]:hover, input[type="reset"]:hover {
+    background-color: #783f49;
+}
+
+/* Rodapé */
+footer {
+    background-color: #a65d68;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Classe para textos destacados */
+.destaque {
+    color: #a65d68;
+    font-weight: bold;
+}
