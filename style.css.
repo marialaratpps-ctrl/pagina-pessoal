@@ -1,5 +1,4 @@
-
-/* Estilo geral da página */
+/* Estilo geral */
 body {
     font-family: Arial, sans-serif;
     background-color: #fff5f5;
@@ -17,10 +16,8 @@ header {
 }
 
 /* Títulos */
-h1 {
-    font-size: 32px;
-    color: white;
-}
+h1 {font-size: 32px;
+    color: white;}
 
 h2 {
     font-size: 24px;
@@ -60,7 +57,7 @@ section {
     margin-bottom: 20px;
 }
 
-/* Parágrafos e listas */
+/* Textos */
 p {
     font-size: 16px;
     line-height: 1.6;
@@ -70,16 +67,32 @@ ul {
     line-height: 1.8;
 }
 
-/* Classe para imagem */
+/* Imagem */
 .foto {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     object-fit: cover;
     border: 3px solid #a65d68;
     border-radius: 50%;
 }
 
 /* Formulário */
+fieldset {
+    border: 1px solid #c99ba2;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+legend {
+    color: #a65d68;
+    font-weight: bold;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
 input, textarea {
     width: 100%;
     padding: 10px;
@@ -95,16 +108,17 @@ textarea {
 }
 
 /* Botões */
-button, input[type="submit"], input[type="reset"] {
+button {
     background-color: #a65d68;
     color: white;
     padding: 10px 18px;
     border: none;
     border-radius: 6px;
     cursor: pointer;
+    margin-right: 8px;
 }
 
-button:hover, input[type="submit"]:hover, input[type="reset"]:hover {
+button:hover {
     background-color: #783f49;
 }
 
@@ -116,7 +130,15 @@ footer {
     padding: 20px;
 }
 
-/* Classe para textos destacados */
+footer a {
+    color: white;
+}
+
+footer a:hover {
+    color: #f2dada;
+}
+
+/* Classe de destaque */
 .destaque {
     color: #a65d68;
     font-weight: bold;
