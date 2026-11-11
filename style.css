@@ -1,271 +1,181 @@
 /* ESTILO GERAL */
 
 * {
-
     box-sizing: border-box;
-
 }
 
 body {
-
     font-family: Arial, sans-serif;
-
     background-color: #fff5f5;
-
     color: #493333;
-
     margin: 0;
-
     padding: 0;
-    display: grid;
-grid-template-columns: 1fr;
 
+    display: grid;
+    grid-template-columns: 1fr;
 }
 
 /* CABEÇALHO */
 
 header {
-
     background-color: #a65d68;
-
     color: white;
-
     text-align: center;
-
     padding: 30px 15px;
-
+    grid-column: 1 / -1;
 }
 
 header h1 {
-
     font-size: 32px;
-
     color: white;
-
 }
 
 /* NAVEGAÇÃO */
 
 nav {
-
     background-color: #f2dada;
-
     text-align: center;
-
     padding: 18px;
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
 }
 
 nav a {
-
     color: #783f49;
-
     text-decoration: none;
-
     font-weight: bold;
-
     margin: 15px;
-
 }
 
 nav a:hover {
-
     color: #c06b7a;
-
     text-decoration: underline;
-    display: flex;
-justify-content: center;
-align-items: center;
-gap: 15px;
-
-
-
 }
 
 /* CONTEÚDO */
 
 main {
-
     width: 85%;
-
     max-width: 1000px;
-
     margin: 30px auto;
-    display: grid;
-grid-template-columns: 1fr;
-gap: 20px;
 
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
 }
 
 /* SEÇÕES */
 
 section {
-
     background-color: white;
-
     border: 1px solid #edcccc;
-
     border-radius: 12px;
-
     padding: 25px;
-
     margin-bottom: 25px;
-
 }
 
 /* TÍTULOS */
 
 h2 {
-
     color: #a65d68;
-
     font-size: 25px;
-
 }
 
 /* TEXTOS */
 
 p {
-
     font-size: 16px;
-
     line-height: 1.6;
-
 }
 
 ul {
-
     line-height: 2;
-
 }
 
 /* IMAGEM */
 
 .foto {
-
     width: 150px;
-
     height: 150px;
-
     object-fit: cover;
-
     border: 3px solid #a65d68;
-
     border-radius: 50%;
-
     display: block;
-
     margin: 20px auto;
-
 }
 
 /* FORMULÁRIO */
 
 fieldset {
-
     border: 1px solid #c99ba2;
-
     border-radius: 10px;
-
     padding: 20px;
-
 }
 
 legend {
-
     color: #a65d68;
-
     font-weight: bold;
-
 }
 
 label {
-
     display: block;
-
     margin-top: 12px;
-
     font-weight: bold;
-
 }
 
 input, textarea {
-
     width: 100%;
-
     padding: 12px;
-
     margin: 8px 0 15px;
-
     border: 1px solid #c99ba2;
-
     border-radius: 6px;
-
     font-family: Arial, sans-serif;
-
 }
 
 /* BOTÕES */
 
 button {
-
     background-color: #a65d68;
-
     color: white;
-
     padding: 11px 20px;
-
     border: none;
-
     border-radius: 6px;
-
     cursor: pointer;
-
 }
 
 button:hover {
-
     background-color: #783f49;
-
 }
 
 /* RODAPÉ */
 
 footer {
-
     background-color: #a65d68;
-
     color: white;
-
     text-align: center;
-
     padding: 20px;
-
+    grid-column: 1 / -1;
 }
 
 footer a {
-
     color: white;
-
     text-decoration: none;
-
 }
 
 footer a:hover {
-
     color: #f2dada;
-    grid-column: 1 / -1;
-
 }
 
 /* CLASSE DE DESTAQUE */
 
 .destaque {
-
     color: #a65d68;
-
     font-weight: bold;
 }
+
 /* TECNOLOGIAS E INTERESSES */
 
 .tecnologias {
@@ -294,6 +204,8 @@ footer a:hover {
     color: #a65d68;
 }
 
+/* TAGS */
+
 .tags {
     display: flex;
     justify-content: flex-start;
@@ -309,8 +221,18 @@ footer a:hover {
     border-radius: 20px;
 }
 
+/* RESPONSIVIDADE */
+
 @media (max-width: 600px) {
     .cards {
         grid-template-columns: 1fr;
+    }
+
+    main {
+        width: 95%;
+    }
+
+    nav {
+        flex-wrap: wrap;
     }
 }
